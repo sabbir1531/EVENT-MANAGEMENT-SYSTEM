@@ -1,14 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gatherly — Find your next experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Event Management System</h1>
-    
-    </header>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">g</span>gatherly</a>
+    <nav class="main-nav" id="mainNav"><a class="active" href="#discover">Discover</a><a
+        href="#categories">Categories</a><a href="#about">For organizers</a></nav>
+    <div class="header-actions"><a class="login-link" href="login.html">Log in</a><a class="button button-dark"
+        href="register.html">Create event</a><button class="menu-button" aria-label="Open menu"
+        id="menuButton">☰</button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="discover">
+      <div class="hero-copy">
+        <p class="eyebrow">Make plans worth keeping</p>
+        <h1>Every great story<br>starts with a <em>gathering.</em></h1>
+        <p class="hero-text">Discover concerts, workshops, pop-ups and unforgettable local experiences — all in one
+          place.</p>
+        <form class="search-panel" id="searchForm">
+          <label><span class="field-icon">⌕</span><input id="searchInput" type="search"
+              placeholder="Search events, artists, or venues"></label>
+          <label class="location"><span class="field-icon">⌖</span><select id="locationSelect">
+              <option>Dhaka, Bangladesh</option>
+              <option>Chattogram, Bangladesh</option>
+              <option>Anywhere</option>
+            </select></label>
+          <button class="search-button" type="submit">Find events <span>→</span></button>
+        </form>
+        <div class="quick-links"><span>Popular:</span><button data-filter="Music">Live music</button><button
+            data-filter="Food & Drink">Food & drink</button><button data-filter="Workshop">Workshops</button></div>
+      </div>
+      <div class="hero-art" aria-label="Friends enjoying a music event">
+        <div class="sun"></div>
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="hero-photo">
+          <div class="photo-overlay"></div>
+          <p>Lose yourself<br>in the moment.</p><span class="photo-caption">EST. 2024 — DHAKA</span>
+        </div>
+        <div class="floating-ticket"><span>UP NEXT</span><strong>Summer<br>nights</strong><small>See what’s happening
+            →</small></div>
+      </div>
+    </section>
+
+    <section class="events-section" id="categories">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Handpicked for you</p>
+          <h2>Happening this week</h2>
+        </div><a href="event.html" class="text-link">View all events <span>→</span></a>
+      </div>
+      <div class="filter-row" id="filterRow"><button class="filter active" data-filter="All">All events</button><button
+          class="filter" data-filter="Music">Music</button><button class="filter" data-filter="Food & Drink">Food &
+          drink</button><button class="filter" data-filter="Workshop">Workshops</button><button class="filter"
+          data-filter="Arts">Arts & culture</button></div>
+      <div class="event-grid" id="eventGrid">
+        <article class="event-card" data-category="Music"><a href="event.html" class="event-image image-one"><span
+              class="date-badge"><b>18</b>JUL</span><span class="heart">♡</span>
+            <div class="image-title">MIDNIGHT<br>RESONANCE</div>
+          </a>
+          <div class="event-info">
+            <p class="event-date">FRI, JUL 18 · 7:00 PM</p>
+            <h3><a href="event.html">Midnight Resonance</a></h3>
+            <p>The Terrace, Gulshan · From ৳800</p>
+          </div>
+        </article>
+        <article class="event-card" data-category="Food & Drink"><a href="event.html"
+            class="event-image image-two"><span class="date-badge"><b>19</b>JUL</span><span class="heart">♡</span>
+            <div class="image-title small-title">SAVOR<br>THE CITY</div>
+          </a>
+          <div class="event-info">
+            <p class="event-date">SAT, JUL 19 · 4:00 PM</p>
+            <h3><a href="event.html">Dhaka Street Food Fest</a></h3>
+            <p>Aloki Convention Centre · From ৳500</p>
+          </div>
+        </article>
+        <article class="event-card" data-category="Workshop"><a href="event.html" class="event-image image-three"><span
+              class="date-badge"><b>20</b>JUL</span><span class="heart">♡</span>
+            <div class="image-title small-title">MAKE<br>YOUR MARK</div>
+          </a>
+          <div class="event-info">
+            <p class="event-date">SUN, JUL 20 · 11:00 AM</p>
+            <h3><a href="event.html">Clay & Coffee Workshop</a></h3>
+            <p>Studio Katha, Banani · ৳1,200</p>
+          </div>
+        </article>
+        <article class="event-card" data-category="Arts"><a href="event.html" class="event-image image-four"><span
+              class="date-badge"><b>24</b>JUL</span><span class="heart">♡</span>
+            <div class="image-title small-title">AFTER<br>GLOW</div>
+          </a>
+          <div class="event-info">
+            <p class="event-date">THU, JUL 24 · 6:30 PM</p>
+            <h3><a href="event.html">Afterglow: Art Night</a></h3>
+            <p>Bengal Shilpalay · From ৳350</p>
+          </div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No events found in this category yet.</p>
+    </section>
+
+    <section class="organizer-banner" id="about">
+      <div>
+        <p class="eyebrow">Bring your idea to life</p>
+        <h2>Good events deserve<br>an audience.</h2>
+      </div>
+      <p>From your first RSVP to your thousandth sold-out ticket, Gatherly gives you the tools to make every moment
+        count.</p><a class="button button-light" href="register.html">Start creating <span>→</span></a>
+    </section>
+  </main>
+  <footer><a class="brand" href="index.html"><span class="brand-mark">g</span>gatherly</a>
+    <p>More moments. More together.</p><span>© 2024 Gatherly</span>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>

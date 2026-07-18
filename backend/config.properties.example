@@ -1,0 +1,9 @@
+port=8080
+static.dir=..
+app.url=http://localhost:8080
+db.url=jdbc:oracle:thin:@//localhost:1521/XEPDB1
+db.user=evetmanagement_db
+db.password=event1531
+ssl.gateway=https://sandbox.sslcommerz.com/gwprocess/v4/api.php
+ssl.store_id=your_sandbox_store_id
+ssl.store_password=your_sandbox_store_password

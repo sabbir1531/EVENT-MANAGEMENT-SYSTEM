@@ -1,0 +1,6 @@
+# Local runtime configuration containing credentials
+backend/config.properties
+
+# Java build output
+backend/out/
+*.class

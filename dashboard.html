@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Event workspace — Gatherly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">g</span>gatherly</a>
+        <div class="header-actions"><span id="userRole" class="checkout-step"></span><button class="button button-dark"
+                id="logout">Log out</button></div>
+    </header>
+    <main class="dashboard">
+        <section>
+            <p class="eyebrow">Admin & event manager workspace</p>
+            <h1>Manage events</h1>
+            <p class="dashboard-note">Create, update, publish, or remove events from one place.</p>
+            <form id="eventForm" class="event-form"><input type="hidden" name="id"><label>Event title<input name="title"
+                        required></label><label>Date & time<input name="eventDate" type="datetime-local"
+                        required></label><label>Venue<input name="venue" required></label><label>Address<input
+                        name="address" required></label><label>Latitude<input name="latitude" type="number" step="any"
+                        required></label><label>Longitude<input name="longitude" type="number" step="any"
+                        required></label><label>Ticket price (BDT)<input name="price" type="number" min="0"
+                        required></label><label>Image URL <input name="imageUrl" type="url"></label><label
+                    class="wide">Description<textarea name="description" required></textarea></label><button
+                    class="button button-dark" type="submit">Save event</button><button class="reset-button"
+                    type="reset">Clear</button></form>
+        </section>
+        <section>
+            <p class="eyebrow">Published events</p>
+            <div id="eventList" class="manager-list"></div>
+        </section>
+    </main>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

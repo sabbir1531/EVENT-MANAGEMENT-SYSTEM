@@ -1,0 +1,28 @@
+{
+  "register_user": {
+    "name": "Amina Rahman",
+    "email": "amina@example.com",
+    "password": "ChangeThis123"
+  },
+  "login": {
+    "email": "amina@example.com",
+    "password": "ChangeThis123"
+  },
+  "create_event": {
+    "title": "Dhaka Music Night",
+    "description": "Live music event",
+    "eventDate": "2026-08-20T19:00",
+    "venue": "The Terrace",
+    "address": "Gulshan 2, Dhaka",
+    "latitude": 23.7925,
+    "longitude": 90.4078,
+    "price": 800,
+    "imageUrl": ""
+  },
+  "create_privileged_account": {
+    "name": "Event Manager",
+    "email": "manager@example.com",
+    "password": "ChangeThis123",
+    "role": "EVENT_MANAGER"
+  }
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>My events — Gatherly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">g</span>gatherly</a>
+        <div class="header-actions"><span id="userName" class="checkout-step"></span><button class="button button-dark"
+                id="logout">Log out</button></div>
+    </header>
+    <main class="user-dashboard">
+        <p class="eyebrow">Your Gatherly account</p>
+        <h1>Find your next event</h1>
+        <p class="dashboard-note">Choose an event below to view details and book a ticket.</p>
+        <div id="availableEvents" class="user-event-grid"></div>
+        <section class="ticket-history">
+            <p class="eyebrow">My tickets</p>
+            <div id="orderList" class="manager-list"></div>
+        </section>
+    </main>
+    <script src="user-dashboard.js"></script>
+</body>
+
+</html>

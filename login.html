@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Log in — Gatherly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">g</span>gatherly</a>
+    </header>
+    <main class="auth-page">
+        <form class="auth-card" id="loginForm">
+            <p class="eyebrow">Welcome back</p>
+            <h1>Log in to Gatherly</h1><label>Email<input required type="email" name="email"
+                    placeholder="you@example.com"></label><label>Password<input required type="password" name="password"
+                    placeholder="Your password"></label>
+            <p id="formMessage" class="form-message"></p><button class="button button-dark" type="submit">Log in
+                <span>→</span></button>
+            <p>New here? <a href="register.html">Create an account</a></p>
+        </form>
+    </main>
+    <script src="auth.js"></script>
+</body>
+
+</html>
